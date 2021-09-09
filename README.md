@@ -56,8 +56,7 @@ When we transfer to the classification model, we only transfer the
 Embedding and the Encoder, as the classifcation model required a
 different linear head. Visually:
 
-![](media/image1.png){width="6.0in" height="2.8125in"}
-
+![avatar](https://github.com/Deep-Bioinfo/TFFLM/blob/main/sup-f1.png)
 Fig.1 The architecture of TFFLM (Blue arrows show transfer learning)
 
 The arthitectures for the Classification Model and the Language Model
