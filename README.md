@@ -20,7 +20,6 @@ conda activate dnabert
 
 #### 1.2 Install the package and other requirements
 
-(Required)
 
 ```
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
