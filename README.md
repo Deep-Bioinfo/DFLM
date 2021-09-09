@@ -57,7 +57,7 @@ Embedding and the Encoder, as the classifcation model required a
 different linear head. Visually:
 
 ![avatar](https://github.com/Deep-Bioinfo/TFFLM/blob/main/sup-f1.png)
-Fig.1 The architecture of TFFLM (Blue arrows show transfer learning)
+<center>Fig.1 The architecture of TFFLM (Blue arrows show transfer learning)</center>
 
 The arthitectures for the Classification Model and the Language Model
 follow similar structures - the consist of an **Embedding**, an
