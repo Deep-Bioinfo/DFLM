@@ -3,7 +3,7 @@
 
 ## 1. Data Preparation and Environment setup
 
-TFFLM mainly used two types of data sets, the unlabeled large-scale
+DFLM mainly used two types of data sets, the unlabeled large-scale
 [Genome Reference Consortium Human Build
 38](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.26/)(GRCh38/hg38)
 and about 500 labeled [ChIP-seq data
@@ -28,7 +28,7 @@ git clone https://github.com/Deep-Bioinfo/DFLM
 python3 -m pip install --editable .
 python3 -m pip install -r requirements.txt
 ```
-## 2. TFFLM Overview
+## 2. DFLM Overview
 
 Now that we can process genomic data into a form we can feed to a model,
 we need to determine our strategy for training the model. Lets start by
@@ -65,8 +65,8 @@ When we transfer to the classification model, we only transfer the
 Embedding and the Encoder, as the classifcation model required a
 different linear head. Visually:
 
-![avatar](https://github.com/Deep-Bioinfo/TFFLM/blob/main/DFLM.png)
-<center> Fig.1 The architecture of TFFLM (Blue arrows show transfer learning) </center>
+![avatar](https://github.com/Deep-Bioinfo/DFLM/blob/main/DFLM.png)
+<center> Fig.1 The architecture of DFLM (Blue arrows show transfer learning) </center>
 
 The arthitectures for the Classification Model and the Language Model
 follow similar structures - the consist of an **Embedding**, an
