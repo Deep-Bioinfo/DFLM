@@ -1,4 +1,4 @@
-# TFFLM: Transcription Factors Fine-tune Language Model for mining transcription factor binding sites
+# DFLM: Transcription Factors Fine-tune Language Model for mining transcription factor binding sites
 
 
 ## 1. Data Preparation and Environment setup
@@ -24,7 +24,7 @@ conda activate dnabert
 ```
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
 
-git clone https://github.com/Deep-Bioinfo/TFFLM
+git clone https://github.com/Deep-Bioinfo/DFLM
 python3 -m pip install --editable .
 python3 -m pip install -r requirements.txt
 ```
@@ -36,12 +36,12 @@ defining our end goal: We want to train a sequence model to classify
 genomic sequences using sequence input alone. This poses a potential
 problem. Sequence models tend to require a large amount of data to train
 effectively, and labeled genomic classification datasets can be small.
-The TFFLM approach provides a solution to this. TFFLM breaks training
+The DFLM approach provides a solution to this. DFLM breaks training
 into three stages:
 
 1.  First we train a general domain language model using unsupervised on
     a large unlabeled corpus hg38.
-2.  We fine tune the general language model on the same TF ChIP-seq data
+2.  We fine tune the general language model on the ChIP-seq data
     sets to create a task specific language model
 3.  We fine tune the task specific language model for classification
 
@@ -65,7 +65,7 @@ When we transfer to the classification model, we only transfer the
 Embedding and the Encoder, as the classifcation model required a
 different linear head. Visually:
 
-![avatar](https://github.com/Deep-Bioinfo/TFFLM/blob/main/sup-f1.png)
+![avatar](https://github.com/Deep-Bioinfo/TFFLM/blob/main/DFLM.png)
 <center> Fig.1 The architecture of TFFLM (Blue arrows show transfer learning) </center>
 
 The arthitectures for the Classification Model and the Language Model
