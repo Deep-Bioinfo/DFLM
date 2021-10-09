@@ -14,8 +14,8 @@ We recommend you to build a python virtual environment with Anaconda. Also, plea
 #### 1.1 Create and activate a new virtual environment
 
 ```
-conda create -n dnabert python=3.7
-conda activate dnabert
+conda create -n DFLM python=3.7
+conda activate DFLM
 ```
 
 #### 1.2 Install the package and other requirements
