@@ -22,7 +22,7 @@ conda activate DFLM
 
 
 ```
-conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
+conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
 
 git clone https://github.com/Deep-Bioinfo/DFLM
 python3 -m pip install --editable .
